@@ -14,7 +14,7 @@ server {
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
-    root /var/www/waissman-game/frontend;
+    root /opt/app/waissmans_game/frontend;
     index index.html;
 
     location /api/ {
@@ -26,7 +26,7 @@ server {
     }
 
     location /logo/ {
-        alias /var/www/waissman-game/logo/;
+        alias /opt/app/waissmans_game/logo/;
     }
 
     location / {
