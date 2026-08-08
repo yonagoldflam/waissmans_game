@@ -1,26 +1,10 @@
-# Waissman Family Trip
+﻿# מסע לקבר רחל ולמערת המכפלה
 
-A small FastAPI API with a static, responsive frontend for a one-day family trip.
+אתר מידע סטטי בעברית, המבוסס על חומרי החוברת שבפרויקט.
 
-## Run locally
+## עריכת התוכן
 
-Create a virtual environment, install requirements, and start the API:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\pip install -r requirements.txt
-.\.venv\Scripts\uvicorn app.main:app --reload
-```
-
-Serve `frontend/` from a static server, or deploy it with Nginx using `nginx.conf.example`. The API defaults to `http://127.0.0.1:8000`; in production Nginx proxies `/api/` to it.
-
-## Editing the trip
-
-- Change the admin password in `app/services/games.py` before deployment.
-- Add or edit games in `GameService._games`.
-- Replace the two files in `frontend/content/` with the historical copy.
-- Implement a game's specific experience in `frontend/game.html` / `frontend/game.js`, using the game ID as the extension point.
-
-## Deploy
-
-Run `docker compose up -d --build`, copy the repository's `frontend/` and `logo/` folders to the Nginx web root indicated in the example configuration, then enable the Nginx site.
+- תוכן האתר נמצא ב־`frontend/content.js`.
+- החידון כולו נמצא ב־`app/trivia.py`. כדי להוסיף שאלה, מוסיפים אובייקט נוסף למערך `TRIVIA_QUESTIONS` באותו מבנה.
+- השאלות נשלחות ללא התשובה הנכונה, ובדיקת תשובה מתבצעת ב־Backend באמצעות API סטטלסי. לכן אפשר להפעיל כמה מופעי Backend במקביל מאחורי Nginx.
+- קובץ ה־Nginx שבפרויקט מגיש את התיקייה `frontend` ומפנה את `/api/` ל־FastAPI.

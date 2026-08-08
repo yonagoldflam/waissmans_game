@@ -1,34 +1,9 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#173b35" />
-    <title>Our Family Journey</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Our Family Journey home"><img src="../logo/logo-waissman-game.jpg" alt="Waissman family trip logo" /></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
-      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-        <a href="#home">Home</a><a href="#games">Games</a><a href="#places">Our stops</a><a href="#admin">Admin</a>
-      </nav>
-    </header>
-
-    <main>
-      <section id="home" class="hero section-shell">
-        <div class="hero-copy"><p class="eyebrow">One day. One family. Many memories.</p><h1>Our journey,<br /><em>together.</em></h1><p>Welcome to our family trip companion. Explore the places we will visit, join the games, and make the day your own.</p><a class="button button-primary" href="#games">Explore the games <span>→</span></a></div>
-        <div class="hero-panel"><span class="panel-kicker">Family trip</span><strong>Make every stop<br />part of the story.</strong><span class="sun" aria-hidden="true">☼</span></div>
-      </section>
-
-      <section id="games" class="section-shell"><div class="section-intro"><p class="eyebrow">Play together</p><h2>Games &amp; puzzles</h2><p>Choose a game, then wait for the adventure to begin. The trip administrator starts each game when everyone is ready.</p></div><div id="games-grid" class="games-grid" aria-live="polite"></div></section>
-
-      <section id="places" class="places-section"><div class="section-shell"><div class="section-intro light"><p class="eyebrow">Discover our route</p><h2>Our special stops</h2><p>Take a moment to learn about the remarkable places we will experience together.</p></div><div class="places-grid"><a class="place-card rachel" href="place.html?place=rachels-tomb"><span>01</span><h3>Rachel's Tomb</h3><p>A place of memory, hope, and prayer.</p><b>Read its story →</b></a><a class="place-card hebron" href="place.html?place=hebron"><span>02</span><h3>Hebron</h3><p>One of the world's most ancient, living cities.</p><b>Explore Hebron →</b></a></div></div></section>
-
-      <section id="admin" class="section-shell admin-section"><div class="section-intro"><p class="eyebrow">Trip control</p><h2>Administrator panel</h2><p>Start or reset games when your group is ready. This panel is intentionally simple for the day of the trip.</p></div><form id="admin-login" class="admin-login"><label for="admin-password">Admin password</label><div><input id="admin-password" type="password" required placeholder="Enter password" autocomplete="current-password" /><button class="button button-primary" type="submit">Unlock controls</button></div><p id="login-message" class="form-message" aria-live="polite"></p></form><div id="admin-controls" hidden></div></section>
-    </main>
-    <footer>Made for our family journey <span>✦</span></footer>
-    <script src="app.js"></script>
-  </body>
-</html>
+﻿<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="theme-color" content="#173b35" /><title>מסע אל קבר רחל ומערת המכפלה</title><link rel="stylesheet" href="styles.css" /></head><body>
+<header class="site-header"><a class="brand" href="#ראשי" aria-label="דף הבית"><img src="../logo/logo-waissman-game.jpg" alt="סמל המסע" /></a><button class="menu-toggle" aria-expanded="false" aria-controls="ניווט">תפריט</button><nav id="ניווט" class="main-nav" aria-label="ניווט ראשי"><a href="#המסע">המסע</a><a href="#רחל">קבר רחל</a><a href="#חברון">חברון</a><a href="#חידון">חידון</a></nav></header>
+<main><section id="ראשי" class="hero section-shell"><div class="hero-copy"><p class="eyebrow">חוברת המסע שלנו</p><h1>קבר רחל<br /><em>ומערת המכפלה</em></h1><p>מסע של זיכרון, תפילה וחיבור אל האבות והאימהות.</p><a class="button button-primary" href="#המסע">מתחילים במסע <span>←</span></a></div><div class="hero-panel"><span class="panel-kicker">חברון · בית לחם</span><strong>מקומות של עבר,<br />חיבור ותקווה.</strong><span class="sun" aria-hidden="true">✦</span></div></section>
+<section id="המסע" class="section-shell"><div class="section-intro"><p class="eyebrow">תרפ״ט</p><h2>המסע אל המקומות הקדושים</h2><p>בקיץ תרפ״ט ערך הרבי הריי״צ מסע מפורסם לארץ הקודש, ובמהלכו ביקר בקבר רחל ובחברון.</p></div><div id="מסע-תוכן" class="story-grid"></div></section>
+<section id="רחל" class="places-section"><div class="section-shell"><div class="section-intro light"><p class="eyebrow">קבר רחל</p><h2>אמא רחל בדרך</h2><p>סיפורה של רחל אמנו, ותכונת הוויתור המלווה אותה.</p></div><div id="רחל-תוכן" class="reading-grid"></div></div></section>
+<section id="חברון" class="section-shell"><div class="section-intro"><p class="eyebrow">עיר האבות</p><h2>חברון ומערת המכפלה</h2><p>המערה העתיקה, סיפור רכישתה והמשמעות העמוקה של שמה של חברון.</p></div><div id="חברון-תוכן" class="reading-grid"></div></section>
+<section id="חידון" class="quiz-section"><div class="section-shell"><div class="section-intro light"><p class="eyebrow">בחנו את עצמכם</p><h2>חידון מערת המכפלה</h2><p>שאלה ראשונה כבר מחכה לכם. ניתן להוסיף שאלות בקלות בקובץ החידון.</p></div><div id="חידון-תוכן" class="quiz-card" aria-live="polite"></div></div></section></main>
+<footer>נבנה עבור המסע המשפחתי שלנו <span>✦</span></footer><script src="content.js"></script><script src="trivia.js"></script><script src="app.js"></script></body></html>
