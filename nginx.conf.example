@@ -1,6 +1,18 @@
 server {
     listen 80;
-    server_name _;
+    server_name waissman.store www.waissman.store;
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name waissman.store www.waissman.store;
+
+    ssl_certificate /etc/letsencrypt/live/waissman.store/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/waissman.store/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
     root /var/www/waissman-game/frontend;
     index index.html;
@@ -13,7 +25,6 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 
-    # Keeps the supplied repository-level logo available to the frontend.
     location /logo/ {
         alias /var/www/waissman-game/logo/;
     }
