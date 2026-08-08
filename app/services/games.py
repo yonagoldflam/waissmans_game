@@ -5,7 +5,7 @@ from copy import deepcopy
 
 class GameService:
     # Intentionally hardcoded at the project's request. Change this before deployment.
-    ADMIN_PASSWORD = "family-trip-2026"
+    ADMIN_PASSWORD = "7770"
 
     def __init__(self) -> None:
         self._games = {
