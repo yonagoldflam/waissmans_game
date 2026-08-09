@@ -14,57 +14,6 @@ class TriviaQuestion(BaseModel):
 # כל החידון נמצא בקובץ זה. הוסיפו שאלות למערך באותו מבנה.
 TRIVIA_QUESTIONS = [
     TriviaQuestion(
-        id="seventh-step",
-        question="במשך מאות שנים, עד לאן הורשו יהודים להתקרב למערת המכפלה?",
-        answers=[
-            "עד פתח המערה",
-            "עד המדרגה השלישית",
-            "עד המדרגה השביעית",
-            "עד הרחבה שמחוץ למתחם",
-        ],
-        correct_answer=2,
-        explanation=(
-            "נכון! החל משנת 1267 נאסר על לא-מוסלמים להיכנס למבנה, "
-            "ויהודים הורשו להגיע עד המדרגה השביעית בלבד. לפי המקורות "
-            "הדבר נמשך כ-700 שנה, עד מלחמת ששת הימים. "
-            "מקור: https://hebron.org.il/en/843-2/"
-        ),
-    ),
-    TriviaQuestion(
-        id="seventh-step-symbol",
-        question="מה הפך את המדרגה השביעית לסמל כל כך משמעותי בתולדות חברון?",
-        answers=[
-            "שם התקיימה הישיבה הראשונה בחברון",
-            "זו הייתה הנקודה שאליה יהודים הורשו להגיע כדי להתפלל מול מערת המכפלה",
-            "שם נמצא קברו של דוד המלך",
-            "שם עמד בית הכנסת העתיק ביותר בעיר",
-        ],
-        correct_answer=1,
-        explanation=(
-            "נכון! במשך מאות שנים המדרגה השביעית הייתה הנקודה הקרובה ביותר "
-            "למערת המכפלה שאליה הורשו יהודים להגיע. גם כיום קיים במקום גן "
-            "הנקרא 'גן המדרגה השביעית', ובימים שבהם המתחם סגור ליהודים "
-            "מתפללים שם. "
-            "מקור: https://hebron.org.il/en/843-2/"
-        ),
-    ),
-    TriviaQuestion(
-        id="seventh-step-700-years",
-        question="בערך כמה זמן נמשכה ההגבלה שבה יהודים הורשו להגיע רק עד המדרגה השביעית?",
-        answers=[
-            "כ-70 שנה",
-            "כ-200 שנה",
-            "כ-500 שנה",
-            "כ-700 שנה",
-        ],
-        correct_answer=3,
-        explanation=(
-            "נכון! לפי המקורות של הקהילה היהודית בחברון, האיסור שהונהג "
-            "בתקופה הממלוכית נמשך כ-700 שנה, עד 1967. "
-            "מקור: https://hebron.org.il/en/historic-renovations-underway-at-tomb-of-the-patriarchs-matriarchs/"
-        ),
-    ),
-    TriviaQuestion(
         id="isaac-hall",
         question="מה מיוחד באולם יצחק במערת המכפלה?",
         answers=[
@@ -81,9 +30,49 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/opening-and-closing-dates-for-the-cave-of-the-patriarchs-for-2026/"
         ),
     ),
+
+    TriviaQuestion(
+        id="current-isaac-opening",
+        question="מה קורה באולם יצחק ורבקה בימים שבהם אינו פתוח ליהודים?",
+        answers=[
+            "הוא פתוח רק למוסלמים וזה משמש אותם כמסגד 😡",
+            "הוא נפתח למתפללים יהודים",
+            "הוא משמש רק את הכוהנים",
+            "הוא הופך למוזיאון",
+        ],
+        correct_answer=1,
+        explanation=(
+            "נכון! במשך השנים שהמוסלמים שלטו בארץ הם הפכו כל דבר קדוש "
+            "ליהודים למסגד. ממשלת רבין קבעה שיש לתת למוסלמים את האולם "
+            "העיקרי למוסלמים. מיותר לציין שהמצב הזה מרתיח מאין כמוהו "
+            "כשאנחנו שולטים בארץ ועדיין נותנים למוסלמים את המקומות הכי "
+            "קדושים לעם היהודי. המצב לפני לא היה הרבה יותר טוב כאשר "
+            "הייתה חלוקה בשעות שונות. "
+            "מקור: https://hebron.org.il/en/opening-and-closing-dates-for-the-cave-of-the-patriarchs-for-2026/"
+        ),
+    ),
+
+    TriviaQuestion(
+        id="seventh-step",
+        question="במשך מאות שנים, עד לאן הורשו יהודים להתקרב למערת המכפלה?",
+        answers=[
+            "עד פתח המערה",
+            "עד המדרגה השלישית",
+            "עד המדרגה השביעית",
+            "עד הרחבה שמחוץ למתחם",
+        ],
+        correct_answer=2,
+        explanation=(
+            "נכון! החל משנת ה׳כ״ז המוסלמים ששלטו בארץ אסרו על יהודים "
+            "להיכנס למבנה, ויהודים הורשו להגיע עד המדרגה השביעית בלבד. "
+            "לפי המקורות הדבר נמשך כ-700 שנה, עד מלחמת ששת הימים. "
+            "מקור: https://hebron.org.il/en/843-2/"
+        ),
+    ),
+
     TriviaQuestion(
         id="isaac-hall-days",
-        question="כמה ימים בשנה מוקצה מתחם מערת המכפלה לתפילה יהודית בלבד?",
+        question="כמה ימים בשנה ממשלת ישראל מסכימה לפתוח את אולם יצחק ליהודים?",
         answers=[
             "3 ימים",
             "7 ימים",
@@ -98,6 +87,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/opening-and-closing-dates-for-the-cave-of-the-patriarchs-for-2026/"
         ),
     ),
+
     TriviaQuestion(
         id="window-purim",
         question="מהו 'פורימא דחברון' או 'פורימא דחלון'?",
@@ -115,6 +105,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://www.chabad.org/holidays/purim/article_cdo/aid/644264/jewish/Purim-Hebron.htm"
         ),
     ),
+
     TriviaQuestion(
         id="window-pidyon",
         question="לפי הסיפור החסידי של 'פורימא דחברון', כיצד ניסו יהודי חברון להעביר פתק לאבות?",
@@ -133,6 +124,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://www.chabad.org/holidays/purim/article_cdo/aid/644264/jewish/Purim-Hebron.htm"
         ),
     ),
+
     TriviaQuestion(
         id="azulai-sultan-sword",
         question="לפי המסורת, מדוע ירד המקובל רבי אברהם אזולאי לתוך מערת המכפלה?",
@@ -147,10 +139,10 @@ TRIVIA_QUESTIONS = [
             "נכון! לפי הסיפור, חרבו של הסולטן נפלה למערה, וחיילים שנשלחו "
             "להוציא אותה לא חזרו. הסולטן דרש מיהודי חברון לספק מתנדב, "
             "ורבי אברהם אזולאי התנדב לרדת בעצמו. "
-            "זהו סיפור מסורתי, ולא תיעוד היסטורי מוסכם. "
             "מקור: https://www.chabad.org/library/article_cdo/aid/588225/jewish/Cave-of-the-Patriarchs-Mearat-Hamachpelah.htm"
         ),
     ),
+
     TriviaQuestion(
         id="azulai-seven-days",
         question="לפי הסיפור על רבי אברהם אזולאי, מה עשה לאחר שחזר ממערת המכפלה?",
@@ -168,9 +160,10 @@ TRIVIA_QUESTIONS = [
             "מקור: https://www.chabad.org/kabbalah/article_cdo/aid/1321931/jewish/The-Fallen-Sword-of-the-Sultan.htm"
         ),
     ),
+
     TriviaQuestion(
         id="frierdiker-rebbe-hebron",
-        question="מה מיוחד בביקורו של הרבי הריי\"צ (האדמו\"ר השישי) בחברון בשנת 1929?",
+        question="מה מיוחד בביקורו של הרבי הריי\"צ (האדמו\"ר השישי) בחברון בשנת תרפ״ט?",
         answers=[
             "הוא היה היהודי הראשון שביקר בחברון",
             "הוא הצליח להיכנס לתוך מבנה מערת המכפלה, למרות שהכניסה ליהודים הייתה מוגבלת",
@@ -185,9 +178,10 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/52499-2/"
         ),
     ),
+
     TriviaQuestion(
         id="1929-eleven-days",
-        question="כמה זמן בערך לפני פרעות תרפ\"ט ביקר הרבי הריי\"צ בחברון?",
+        question="כמה זמן בערך לפני פרעות תרפ״ט ביקר הרבי הריי\"צ בחברון?",
         answers=[
             "יום אחד",
             "כשבועיים",
@@ -201,6 +195,7 @@ TRIVIA_QUESTIONS = [
             "מקור לביקור: https://hebron.org.il/en/52499-2/"
         ),
     ),
+
     TriviaQuestion(
         id="mitteler-rebbe-property",
         question="מה היה הנכס החב\"די הראשון בארץ ישראל שנרכש על ידי האדמו\"ר האמצעי בחברון?",
@@ -218,6 +213,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/the-history-of-chabad-in-hebron/"
         ),
     ),
+
     TriviaQuestion(
         id="chabad-investment-hebron",
         question="איזו עיר בארץ ישראל קיבלה בתקופת האדמו\"ר האמצעי השקעה חב\"דית גדולה במיוחד?",
@@ -235,6 +231,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/the-history-of-chabad-in-hebron/"
         ),
     ),
+
     TriviaQuestion(
         id="menucha-rochel-birth",
         question="מה הקשר המיוחד בין י\"ט כסלו, הרבנית מנוחה רחל וחברון?",
@@ -252,22 +249,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://www.chabad.org/theJewishWoman/article_cdo/aid/4276361/jewish/Walking-Between-the-Raindrops-The-Life-of-Rebbetzin-Menucha-Rochel-Slonim.htm"
         ),
     ),
-    TriviaQuestion(
-        id="menucha-rochel-43-years",
-        question="כמה זמן בערך הייתה הרבנית מנוחה רחל סלונים דמות מרכזית בקהילת חב\"ד בחברון?",
-        answers=[
-            "כ-5 שנים",
-            "כ-15 שנים",
-            "כ-25 שנים",
-            "יותר מ-40 שנה",
-        ],
-        correct_answer=3,
-        explanation=(
-            "נכון! הרבנית מנוחה רחל עברה לחברון ב-1845 ונפטרה ב-1888, "
-            "והייתה במשך יותר מארבעים שנה עמוד תווך של הקהילה החב\"דית בעיר. "
-            "מקור: https://www.chabad.org/news/article_cdo/aid/7396939/jewish/New-Museum-Field-of-Machpelah-Tells-the-Age-Old-Jewish-Story-of-Hebron.htm"
-        ),
-    ),
+
     TriviaQuestion(
         id="menucha-rochel-blessings",
         question="מי, לפי המסורות על הרבנית מנוחה רחל, נהגו להגיע אליה לקבלת עצה וברכה?",
@@ -284,6 +266,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/memories-of-menucha-rachel-slonim-mother-of-hebron/"
         ),
     ),
+
     TriviaQuestion(
         id="menucha-rochel-house",
         question="איזה בית מזוהה במסורת החב\"דית עם מגוריה של הרבנית מנוחה רחל בחברון?",
@@ -301,6 +284,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/memories-of-menucha-rachel-slonim-mother-of-hebron/"
         ),
     ),
+
     TriviaQuestion(
         id="beit-romano",
         question="מי רכש את בית רומנו בחברון עבור חב\"ד?",
@@ -318,6 +302,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://www.chabad.org/news/article_cdo/aid/596836/jewish/Reclaiming-Hebron-History.htm"
         ),
     ),
+
     TriviaQuestion(
         id="torat-emet",
         question="איזה מוסד חב\"די הוקם בבית רומנו בחברון?",
@@ -334,6 +319,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://www.chabad.org/library/article_cdo/aid/6390693/jewish/The-Social-Activism-of-the-Fifth-Chabad-Rebbe.htm"
         ),
     ),
+
     TriviaQuestion(
         id="beit-romano-police",
         question="מה קרה לבית רומנו לאחר שהבריטים השתלטו על ארץ ישראל?",
@@ -351,6 +337,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/220-2/"
         ),
     ),
+
     TriviaQuestion(
         id="rebbes-property-1967",
         question="מה עשה הרבי מליובאוויטש עם זכויות חב\"ד בנכסים בחברון לאחר 1967?",
@@ -369,6 +356,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/766/"
         ),
     ),
+
     TriviaQuestion(
         id="baruch-nachshon",
         question="איזה חסיד חב\"ד היה מהדמויות המרכזיות בחידוש הקהילה היהודית בחברון לאחר 1967?",
@@ -386,6 +374,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://pt.chabad.org/library/article_cdo/aid/5275413/jewish/O-Artista-e-Chassid-Baruch-Nachshon-zl.htm"
         ),
     ),
+
     TriviaQuestion(
         id="nachshon-brit",
         question="איזה אירוע הקשור לברוך נחסון נחשב לאחד הזרזים לפתיחת מערת המכפלה מחדש ליהודים?",
@@ -403,6 +392,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://www.chabad.org/library/article_cdo/aid/624279/jewish/A-Visit-to-Hebron.htm"
         ),
     ),
+
     TriviaQuestion(
         id="menucha-rochel-synagogue",
         question="מה מיוחד בבית הכנסת מנוחה רחל בחברון?",
@@ -421,6 +411,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/the-history-of-chabad-in-hebron/"
         ),
     ),
+
     TriviaQuestion(
         id="chabad-hebron-headquarters",
         question="מה היה מעמדה של חברון עבור חסידי חב\"ד בארץ ישראל במאה ה-19?",
@@ -438,6 +429,7 @@ TRIVIA_QUESTIONS = [
             "מקור: https://www.chabad.org/library/article_cdo/aid/624279/jewish/A-Visit-to-Hebron.htm"
         ),
     ),
+
     TriviaQuestion(
         id="current-jewish-days",
         question="כאשר מערת המכפלה סגורה ליהודים כיום, איפה עדיין אפשר להתפלל בסמוך למתחם?",
@@ -455,39 +447,6 @@ TRIVIA_QUESTIONS = [
             "מקור: https://hebron.org.il/en/828/"
         ),
     ),
-    TriviaQuestion(
-        id="current-isaac-opening",
-        question="מה קורה באולם יצחק ורבקה בימים שבהם מערת המכפלה מוקדשת לתפילה יהודית?",
-        answers=[
-            "הוא נשאר סגור לחלוטין",
-            "הוא נפתח למתפללים יהודים",
-            "הוא משמש רק את הכוהנים",
-            "הוא הופך למוזיאון",
-        ],
-        correct_answer=1,
-        explanation=(
-            "נכון! בימים המוקדשים לתפילה יהודית, אולם יצחק ורבקה נפתח "
-            "למתפללים יהודים. האולם מכיל גם את הפתח למערה עצמה. "
-            "מקור: https://hebron.org.il/en/opening-and-closing-dates-for-the-cave-of-the-patriarchs-for-2026/"
-        ),
-    ),
-    TriviaQuestion(
-        id="gate-to-hebron",
-        question="מה נפתח בחברון בשנת 2026 כחלק מפרויקט חב\"די חדש?",
-        answers=[
-            "ישיבת תורת אמת המחודשת",
-            "מרכז המבקרים 'Gateway to Hebron'",
-            "בית כנסת חדש במערה",
-            "מוזיאון הרבי הריי\"צ",
-        ],
-        correct_answer=1,
-        explanation=(
-            "נכון! ביוני 2026 נחנך בחברון מרכז המבקרים 'Gateway to Hebron', "
-            "פרויקט של חב\"ד חברון הממוקם בבניין גוטניק, בסמוך למערת המכפלה. "
-            "המרכז מציג את ההיסטוריה היהודית של חברון ואת הקשר המיוחד של חב\"ד לעיר. "
-            "מקור: https://hebron.org.il/en/gate-to-hebron-exhibit-opens/"
-        ),
-    ),
 ]
 
 
@@ -500,7 +459,11 @@ def public_questions() -> list[dict]:
 
 
 def check_answer(question_id: str, selected_answer: int) -> dict | None:
-    question = next((item for item in TRIVIA_QUESTIONS if item.id == question_id), None)
+    question = next(
+        (item for item in TRIVIA_QUESTIONS if item.id == question_id),
+        None,
+    )
+
     if question is None:
         return None
 
