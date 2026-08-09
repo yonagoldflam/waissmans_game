@@ -3,6 +3,8 @@ from pydantic import BaseModel
 
 from app.trivia import check_answer, public_questions
 
+import logging
+
 app = FastAPI(title="מסע קבר רחל ומערת המכפלה", version="1.1.0")
 
 
@@ -17,6 +19,7 @@ def health_check() -> dict[str, str]:
 
 @app.get("/api/trivia")
 def get_trivia(response: Response) -> list[dict]:
+    logging.info("getting trivia answer")
     # השאלות קבועות; המטמון מפחית עומס גם כאשר משתמשים רבים נכנסים במקביל.
     response.headers["Cache-Control"] = "public, max-age=60"
     return public_questions()
